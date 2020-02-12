@@ -1,5 +1,6 @@
 #解决从某一点到其余各点的最短距离：dijkstra算法
 #题目来源：  计蒜客   T1213  拯救行动
+#算法讲解：https://www.bilibili.com/video/av25829980/?spm_id_from=trigger_reload
 import heapq
 import math
 
