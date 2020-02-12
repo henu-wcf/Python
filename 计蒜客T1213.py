@@ -21,7 +21,7 @@ class Node:
         self.y = y
         self.s = s
         self.parent = parent
-def bfs(loc, row, col, x1, y1, x2, y2, distance):
+def dijkstra(loc, row, col, x1, y1, x2, y2, distance):
     global pqueue, isask, dir, tmp
     flag = False
     node = Node(x1, y1, 0, None)
@@ -78,7 +78,7 @@ def main():
                 distance[i][j] = 0                             #将起始点到自身的距离初始化为0
             if line[j]=="a":
                 x2, y2 = i, j
-    step, flag = bfs(loc, row, col, x1, y1, x2, y2, distance)
+    step, flag = dijkstra(loc, row, col, x1, y1, x2, y2, distance)
     if flag:
         print(step)
     else:
