@@ -12,7 +12,7 @@ import math
 #（注意：其实当head.s+1相等时，就是做dijkstra算法时遇到 到两个点距离相等时，此时确定哪个都行（离散数学）；
 # 所以tmp只是起到让系统能够确定一个即可；可见计算机不及人的智力）
 tmp = 0
-pqueue = []                     #dijkstr算法的核心：优先队列（Python中直接有可以用的优先队列，import heapq）
+pqueue = []                     #dijkstr算法的核心：优先队列（priority queue）（Python中直接有可以用的优先队列，import heapq）
 isask = [[False for i in range(200)] for i in range(200)]
 dir = [[0,1], [0,-1], [1,0], [-1,0]]
 class Node:
